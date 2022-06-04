@@ -1,0 +1,28 @@
+.container-wrapper {
+  container: container / inline-size;
+}
+
+.container {
+  display: grid;
+	grid-template: "title" "description" / 1fr;
+	gap: 1em;
+	padding: 1em;
+}
+
+@container (min-width: 50px) {
+	.container {
+		gap: 2em;
+		padding: 2em;
+		grid-template: "title description" / 1fr 1fr;
+	}
+
+	.container__description {
+		text-align: left;
+	}
+}
+
+@container (min-width: 100px) {
+	.container {
+		grid-template-columns: 2fr 1fr;
+	}
+}

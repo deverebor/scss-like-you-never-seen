@@ -1,16 +1,20 @@
 <template>
   <SubGrids />
   <hr />
+  <ContainerQueries />
+  <hr />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import SubGrids from "./components/SubGrids/SubGrids.vue";
+import ContainerQueries from "./components/ContainerQueries/ContainerQueries.vue";
 
 export default defineComponent({
   name: "App",
   components: {
     SubGrids,
+    ContainerQueries,
   },
 });
 </script>
