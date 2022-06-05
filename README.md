@@ -1,4 +1,4 @@
-# Scss Like you never seen before
+# Scss Like You Never Seen Before
 
 ![GitHub repo size](https://https://img.shields.io/github/repo-size/deverebor/scss-like-you-never-seen/?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/deverebor/scss-like-you-never-seen/?style=for-the-badge)
@@ -15,9 +15,9 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Você tem uma máquina `<Windows / Linux / Mac>`.
 * Você leu meu artigo no Devto.
 
-## 🚀 Instalando Scss Like you never seen before
+## 🚀 Instalando # Scss Like You Never Seen Before
 
-Para instalar o Scss Like you never seen before, siga estas etapas:
+Para instalar siga estas etapas:
 
 > Clone o repo
 
@@ -37,9 +37,9 @@ cd scss-like-you-never-seen
 yarn install
 ```
 
-## ☕ Usando Scss Like you never seen before
+## ☕ Usando o projeto
 
-Para usar Scss Like you never seen before, siga estas etapas:
+Siga estas etapas:
 
 > Inicialize o projeto
 
