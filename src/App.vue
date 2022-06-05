@@ -5,6 +5,7 @@
   <hr />
   <ExtendRule />
   <hr />
+  <LayerRule />
 </template>
 
 <script lang="ts">
@@ -12,6 +13,7 @@ import { defineComponent } from "vue";
 import SubGrids from "./components/SubGrids/SubGrids.vue";
 import ContainerQueries from "./components/ContainerQueries/ContainerQueries.vue";
 import ExtendRule from "./components/ExtendRule/ExtendRule.vue";
+import LayerRule from "./components/LayerRule/LayerRule.vue";
 
 export default defineComponent({
   name: "App",
@@ -19,6 +21,7 @@ export default defineComponent({
     SubGrids,
     ContainerQueries,
     ExtendRule,
+    LayerRule,
   },
 });
 </script>
