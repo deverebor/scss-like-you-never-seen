@@ -6,11 +6,3 @@
     @return $brand-primary;
   }
 }
-
-@function create-element($type, $content) {
-  @return "
-    <$type>
-      $content
-    </$type>
-  ";
-}
