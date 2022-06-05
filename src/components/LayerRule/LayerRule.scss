@@ -1,0 +1,68 @@
+@use '../../styles';
+@layer base, reset, layout, components;
+
+@layer reset {
+  body {
+    color: hotpink;
+  }
+}
+
+@layer layout {
+  .layer-rule {
+    background: styles.$brand-secondary-dark;
+    padding-block: styles.$spacing-big;
+    margin-block-end: styles.$spacing-small;
+  }
+}
+
+@layer components {
+  .layer-rule {
+    &__container {
+      &-button {
+        display: inline-block;
+        pointer: cursor;
+        text-decoration: none;
+        border-radius: styles.$spacing-base;
+    
+        background: styles.$green-600;
+        margin: styles.$spacing-medium;
+        color: styles.$white;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+@layer base {
+  .layer-rule {
+    &__container {
+      inline-size: min(100% - 3rem, 60rem);
+      margin-inline: auto;
+
+      &::where(:not(:first-child)) {
+        margin-bottom: var(--size-4);
+      }
+
+      &-focus {
+        display: block;
+        font-weight: bolder;
+        font-size: styles.$spacing-base;
+        color: styles.$brand-primary-dark;
+      }
+
+      &-paragraph {
+        max-width: styles.$width-small;
+      }
+    }
+
+    &-title {
+      font-size: styles.$spacing-base;
+      margin-block-end: styles.$spacing-medium;
+    }
+  }
+
+  a {
+    color: styles.$red;
+  }
+}
