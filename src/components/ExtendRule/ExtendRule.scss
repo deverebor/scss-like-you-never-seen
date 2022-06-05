@@ -26,7 +26,7 @@
       color: styles.$brand-danger;
     }
 
-    @include styles.respond-to(large){
+    @include styles.respond-to(small){
       &-header {
         &--title {
           padding-block: styles.$spacing-big;

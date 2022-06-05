@@ -1,10 +1,10 @@
 <template>
-  <div class="container-wrapper">
+  <main class="container-wrapper">
     <div class="container">
       <div class="container__title">Titulo</div>
       <div class="container__description">Descrição</div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script lang="ts">

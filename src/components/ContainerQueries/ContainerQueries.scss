@@ -1,18 +1,23 @@
+@use '../../styles';
+
 .container-wrapper {
-  container: container / inline-size;
+	contain: style layout inline-size;
+  width: 100%;
 }
 
 .container {
   display: grid;
-	grid-template: "title" "description" / 1fr;
-	gap: 1em;
-	padding: 1em;
+	grid-template: 
+	"title"
+	"description" / 1fr;
+	gap: styles.$spacing-base;
+	padding: styles.$spacing-base;
 }
 
-@container (min-width: 50px) {
+@container (max-width: 850px) {
 	.container {
-		gap: 2em;
-		padding: 2em;
+		gap: styles.$spacing-medium;
+		padding: styles.$spacing-medium;
 		grid-template: "title description" / 1fr 1fr;
 	}
 
@@ -21,8 +26,11 @@
 	}
 }
 
-@container (min-width: 100px) {
+@container (max-width: 650px) {
 	.container {
-		grid-template-columns: 2fr 1fr;
+		display: flex;
+		flex-direction: column;
+		gap: styles.$spacing-medium;
+		padding: styles.$spacing-medium;
 	}
 }
