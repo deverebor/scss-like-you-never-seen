@@ -1,18 +1,21 @@
+@use '../../styles';
+
 .subgrids {
-  border: 10px solid red;
-  color: white;
+  border: 10px solid $red;
+  color: $white;
+
   &__container {
     width: 700px;
     height: 500px;
-    background: rgb(124, 139, 94);
-    border: 10px solid purple;
+    background: $green-400;
+    border: 10px solid $purple;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
 
     &-secondary {
-      background: rgb(72, 170, 137);
-      border: 10px solid green;
+      background: $green-600;
+      border: 10px solid $yellow;
       grid-row: 2/ 3;
       grid-column: 2/ 5;
       display: grid;
@@ -21,8 +24,8 @@
     }
 
     &-tertiary {
-      background: rgb(45, 105, 85);
-      border: 10px solid white;
+      background: $green-500;
+      border: 10px solid $white;
       grid-row: 3/ 3;
       grid-column: 3/ 5;
       display: grid;
@@ -31,8 +34,8 @@
     }
 
     &-quaternary {
-      background: rgb(23, 54, 44);
-      border: 10px solid blue;
+      background: $green-700;
+      border: 10px solid $blue;
       grid-row: 4/ 3;
       grid-column: 4/ 5;
       display: grid;

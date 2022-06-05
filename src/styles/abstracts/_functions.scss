@@ -1,0 +1,16 @@
+/// Functions in the abstracts folder are used in the main stylesheet.
+@use '../themes';
+
+@function setBrandColor($color) {
+  @if ($color == 'primary') {
+    @return $brand-primary;
+  }
+}
+
+@function create-element($type, $content) {
+  @return "
+    <$type>
+      $content
+    </$type>
+  ";
+}
