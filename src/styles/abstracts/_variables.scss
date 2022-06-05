@@ -2,4 +2,11 @@
 
 $spacing-small: 8px;
 $spacing-base: 16px;
-$spacing-big: 24px;
+$spacing-medium: 24px;
+$spacing-big: 32px;
+
+$breakpoints: (
+  'small':  ( min-width:  767px ),
+  'medium': ( min-width:  992px ),
+  'large':  ( min-width: 1200px )
+) !default;

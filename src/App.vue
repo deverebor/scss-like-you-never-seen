@@ -3,18 +3,22 @@
   <hr />
   <ContainerQueries />
   <hr />
+  <ExtendRule />
+  <hr />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import SubGrids from "./components/SubGrids/SubGrids.vue";
 import ContainerQueries from "./components/ContainerQueries/ContainerQueries.vue";
+import ExtendRule from "./components/ExtendRule/ExtendRule.vue";
 
 export default defineComponent({
   name: "App",
   components: {
     SubGrids,
     ContainerQueries,
+    ExtendRule,
   },
 });
 </script>
