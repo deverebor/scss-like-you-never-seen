@@ -1,20 +1,22 @@
-/// Aplication mixins
+@use '_variables';
 
-@mixin respond-to($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+@mixin respond-to($input) {
+  @if map-has-key($breakinpoint, $breakinpoint) {
+    @media #{inspect(map-get($breakinpoint, $breakinpoint))} {
       @content;
     }
   }
 
   @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+    @warn "Unfortunately, no value could be retrieved from `#{$input}`. "
+        + "Available breakpoints are: #{map-keys($breakinpoint)}.";
   }
 }
 
-$breakpoints: (
-  'small':  ( min-width:  767px ),
-  'medium': ( min-width:  992px ),
-  'large':  ( min-width: 1200px )
-) !default;
+@mixin rounded($radius) {
+  -webkit-border-radius: $radius; 
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+$breakinpoint: variables.$breakpoints;

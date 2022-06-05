@@ -1,0 +1,49 @@
+@use '../../styles';
+
+.extend-rule {
+  &__container {
+    &-header {
+      &--title {
+        background: styles.$brand-primary;
+        color: styles.$white;
+        font-size: styles.$spacing-big;
+      }
+      &--subtitle {
+        background: styles.$brand-secondary;
+        color: styles.$black;
+        font-size: styles.$spacing-base;
+      }
+    }
+
+    &--success {
+      color: styles.$brand-success;
+      padding-block: styles.$spacing-base;
+      font-size: styles.$spacing-medium;
+    }
+
+    &--error {
+      @extend .extend-rule__container--success;
+      color: styles.$brand-danger;
+    }
+
+    @include styles.respond-to(large){
+      &-header {
+        &--title {
+          padding-block: styles.$spacing-big;
+        }
+        &--subtitle {
+          padding-block: styles.$spacing-base;
+        }
+      }
+    }
+
+    &-button {
+      background: styles.$brand-primary;
+      color: styles.$white;
+      font-size: styles.$spacing-base;
+      border: none;
+      padding: styles.$spacing-small;
+      @include styles.rounded(styles.$spacing-small);
+    }
+  }
+}
