@@ -1,15 +1,14 @@
 @use '_variables';
 
-@mixin respond-to($input) {
-  @if map-has-key($breakinpoint, $breakinpoint) {
-    @media #{inspect(map-get($breakinpoint, $breakinpoint))} {
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
       @content;
     }
   }
-
   @else {
-    @warn "Unfortunately, no value could be retrieved from `#{$input}`. "
-        + "Available breakpoints are: #{map-keys($breakinpoint)}.";
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
 }
 
@@ -19,4 +18,5 @@
   border-radius: $radius;
 }
 
-$breakinpoint: variables.$breakpoints;
+
+$breakpoints: variables.$breakpoint;
