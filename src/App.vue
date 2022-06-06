@@ -6,6 +6,8 @@
   <ExtendRule />
   <hr />
   <LayerRule />
+  <hr />
+  <HasSelector />
 </template>
 
 <script lang="ts">
@@ -14,6 +16,7 @@ import SubGrids from "./components/SubGrids/SubGrids.vue";
 import ContainerQueries from "./components/ContainerQueries/ContainerQueries.vue";
 import ExtendRule from "./components/ExtendRule/ExtendRule.vue";
 import LayerRule from "./components/LayerRule/LayerRule.vue";
+import HasSelector from "./components/HasSelector/HasSelector.vue";
 
 export default defineComponent({
   name: "App",
@@ -22,6 +25,7 @@ export default defineComponent({
     ContainerQueries,
     ExtendRule,
     LayerRule,
+    HasSelector,
   },
 });
 </script>
