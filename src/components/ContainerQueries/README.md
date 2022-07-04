@@ -4,7 +4,8 @@ Para utilizar o `@container` é necessário definir um query para o componente, 
 
 ```scss
 .nosso-wrapper {
-  contain: style layout inline-size;
+  container-name: wrapper;
+	container-type: inline-size;
 }
 ```
 
@@ -17,7 +18,7 @@ Oque também diferencia o `@container` do `@media` é que ele ajusta o tamanho d
 EX:
 
 ```scss
-@container (inline > 50px) {
+@container wrapper (inline > 50px) {
   .nossa-classe {
     display: grid;
     align-items: center;
