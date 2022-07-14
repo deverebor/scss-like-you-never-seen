@@ -1,0 +1,30 @@
+@use '../../styles';
+
+.accent-color {
+  background-color: styles.$brand-primary-dark;
+  color: styles.$white;
+  font-size: styles.$spacing-medium;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    input[type="radio"] {
+      position: absolute;
+      margin-block-start: 0.5rem;
+      accent-color: styles.$brand-danger-dark;
+      display: flex;
+      margin-inline: 0;
+    }
+  
+    label {
+      display: flex;
+      margin-left: 1rem;
+    }
+  }
+}
