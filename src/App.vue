@@ -8,6 +8,8 @@
   <LayerRule />
   <hr />
   <HasSelector />
+  <hr />
+  <AccentColor />
 </template>
 
 <script lang="ts">
@@ -17,6 +19,7 @@ import ContainerQueries from "./components/ContainerQueries/ContainerQueries.vue
 import ExtendRule from "./components/ExtendRule/ExtendRule.vue";
 import LayerRule from "./components/LayerRule/LayerRule.vue";
 import HasSelector from "./components/HasSelector/HasSelector.vue";
+import AccentColor from "./components/AccentColor/AccentColor.vue";
 
 export default defineComponent({
   name: "App",
@@ -26,10 +29,11 @@ export default defineComponent({
     ExtendRule,
     LayerRule,
     HasSelector,
+    AccentColor,
   },
 });
 </script>
-
+, AccentColor
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
