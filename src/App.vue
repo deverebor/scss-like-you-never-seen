@@ -10,6 +10,8 @@
   <HasSelector />
   <hr />
   <AccentColor />
+  <hr />
+  <ScrollSnap />
 </template>
 
 <script lang="ts">
@@ -20,6 +22,7 @@ import ExtendRule from "./components/ExtendRule/ExtendRule.vue";
 import LayerRule from "./components/LayerRule/LayerRule.vue";
 import HasSelector from "./components/HasSelector/HasSelector.vue";
 import AccentColor from "./components/AccentColor/AccentColor.vue";
+import ScrollSnap from "./components/ScrollSnap/ScrollSnap.vue";
 
 export default defineComponent({
   name: "App",
@@ -30,6 +33,7 @@ export default defineComponent({
     LayerRule,
     HasSelector,
     AccentColor,
+    ScrollSnap,
   },
 });
 </script>
