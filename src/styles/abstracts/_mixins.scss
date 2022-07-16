@@ -1,4 +1,5 @@
 @use '_variables';
+@use '../themes';
 
 @mixin respond-to($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
@@ -18,5 +19,23 @@
   border-radius: $radius;
 }
 
+@mixin setAvatar($size, $circle: false) {
+  width: $size;
+  height: $size;
+
+  @if $circle {
+    border-radius: $size / 2;
+  }
+}
+
+@mixin theme-colors($light-theme: true) {
+  @if $light-theme {
+    background-color: themes.$brand-primary;
+    color: themes.$brand-secondary;
+  } @else {
+    background-color: themes.$brand-primary-dark;
+    color: themes.$brand-secondary-dark;
+  }
+}
 
 $breakpoints: variables.$breakpoint;

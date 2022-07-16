@@ -6,3 +6,23 @@
     @return $brand-primary;
   }
 }
+
+@function pow($base, $exponent) {
+  $result: 1;
+
+  @for $_ from 1 through $exponent {
+    $result: $result * $base;
+  }
+
+  @return $result;
+}
+
+@function sum($numbers...) {
+  $sum: 0;
+
+  @each $number in $numbers {
+    $sum: $sum + $number;
+  }
+
+  @return $sum;
+}
