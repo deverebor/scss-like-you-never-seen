@@ -1,0 +1,25 @@
+@use "../../styles";
+
+%inner-step-base {
+  border-radius: 100%;
+  margin-block: styles.$spacing-base;
+  padding: styles.$spacing-base;
+}
+
+.nesting-rule {
+  align-content: space-between;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+
+  &__inner {
+    &-step {
+      @extend %inner-step-base;
+      background-color: styles.$brand-success;
+    }
+  }
+
+  &-icon {
+    color: styles.$brand-secondary-dark;
+  }
+}

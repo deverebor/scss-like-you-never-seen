@@ -12,6 +12,8 @@
   <AccentColor />
   <hr />
   <ScrollSnap />
+  <hr />
+  <NestingRule />
 </template>
 
 <script lang="ts">
@@ -23,6 +25,7 @@ import LayerRule from "./components/LayerRule/LayerRule.vue";
 import HasSelector from "./components/HasSelector/HasSelector.vue";
 import AccentColor from "./components/AccentColor/AccentColor.vue";
 import ScrollSnap from "./components/ScrollSnap/ScrollSnap.vue";
+import NestingRule from "./components/NestingRule/NestingRule.vue";
 
 export default defineComponent({
   name: "App",
@@ -34,6 +37,7 @@ export default defineComponent({
     HasSelector,
     AccentColor,
     ScrollSnap,
+    NestingRule,
   },
 });
 </script>
