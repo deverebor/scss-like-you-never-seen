@@ -1,8 +1,9 @@
 <template>
   <main class="container-wrapper">
     <div class="container">
-      <div class="container__title">Titulo</div>
-      <div class="container__description">Descrição</div>
+      <h1 class="container__title">Titulo</h1>
+      <h3 class="container__subtitle">SubTitulo</h3>
+      <p class="container__description">Descrição</p>
     </div>
   </main>
 </template>

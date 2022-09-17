@@ -1,3 +1,11 @@
+@use "../../styles";
+
+%wrapper {
+  max-width: 850px;
+  height: 400px;
+  font-size: styles.$spacing-xxbig;
+}
+
 .scroll-snap {
   @extend %wrapper;
   overflow: auto;
@@ -11,18 +19,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: styles.$white;
   }
 }
 
-%wrapper {
-  max-width: 850px;
-  height: 300px;
-  font-size: 60px;
+.scroll-snap__area:nth-of-type(1) {
+  background: styles.$black;
 }
-
-
-.scroll-snap__area:nth-of-type(1) {  background: IndianRed; }
-.scroll-snap__area:nth-of-type(2) {  background: Moccasin; }
-.scroll-snap__area:nth-of-type(3) {  background: thistle; }
-.scroll-snap__area:nth-of-type(4) {  background: seagreen; }
+.scroll-snap__area:nth-of-type(2) {
+  background: styles.$blue;
+}
+.scroll-snap__area:nth-of-type(3) {
+  background: styles.$brand-warning-dark;
+}
+.scroll-snap__area:nth-of-type(4) {
+  background: styles.$brand-success-dark;
+}

@@ -1,25 +1,27 @@
-@use '../../styles';
+@use "../../styles";
 
 .container-wrapper {
 	container-name: wrapper;
 	container-type: inline-size;
-  width: 100%;
+	display: flex;
+	place-content: center;
 }
 
 .container {
-  display: grid;
-	grid-template: 
-	"title"
-	"description" / 1fr;
+	display: grid;
+	grid-template:
+		"container__title"
+		"container__subtitle"
+		"container__description" / 1fr;
 	gap: styles.$spacing-base;
 	padding: styles.$spacing-base;
 }
 
-@container wrapper (max-width: 850px) {
+@container wrapper (inline > 850px) {
 	.container {
 		gap: styles.$spacing-medium;
 		padding: styles.$spacing-medium;
-		grid-template: "title description" / 1fr 1fr;
+		grid-template: "container__title container__subtitle container__description" / 1fr 1fr 1fr;
 	}
 
 	.container__description {
@@ -27,7 +29,7 @@
 	}
 }
 
-@container wrapper (max-width: 650px) {
+@container wrapper (inline > 650px) {
 	.container {
 		display: flex;
 		flex-direction: column;

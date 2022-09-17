@@ -1,38 +1,6 @@
-@use '../../styles';
-@layer base, reset, layout, components;
+@use "../../styles";
 
-@layer reset {
-  body {
-    color: hotpink;
-  }
-}
-
-@layer layout {
-  .layer-rule {
-    background: styles.$brand-secondary-dark;
-    padding-block: styles.$spacing-big;
-    margin-block-end: styles.$spacing-small;
-  }
-}
-
-@layer components {
-  .layer-rule {
-    &__container {
-      &-button {
-        display: inline-block;
-        pointer: cursor;
-        text-decoration: none;
-        border-radius: styles.$spacing-base;
-    
-        background: styles.$green-600;
-        margin: styles.$spacing-medium;
-        color: styles.$white;
-        font-weight: bold;
-      }
-    }
-  }
-}
-
+@layer base, layout, components;
 
 @layer base {
   .layer-rule {
@@ -64,5 +32,31 @@
 
   a {
     color: styles.$red;
+  }
+}
+
+@layer layout {
+  .layer-rule {
+    background: styles.$brand-secondary-dark;
+    padding-block: styles.$spacing-big;
+    margin-block-end: styles.$spacing-small;
+  }
+}
+
+@layer components {
+  .layer-rule {
+    &__container {
+      &-button {
+        display: inline-block;
+        pointer: cursor;
+        text-decoration: none;
+        border-radius: styles.$spacing-base;
+
+        background: styles.$green-600;
+        margin: styles.$spacing-medium;
+        color: styles.$white;
+        font-weight: bold;
+      }
+    }
   }
 }

@@ -1,21 +1,21 @@
-@use '../../styles';
+@use "../../styles";
 
 .subgrids {
-  border: 10px solid styles.$red;
+  border: styles.$spacing-small solid styles.$red;
   color: styles.$white;
 
   &__container {
     width: 700px;
     height: 500px;
     background: styles.$green-400;
-    border: 10px solid styles.$purple;
+    border: styles.$spacing-small solid styles.$purple;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
 
     &-secondary {
       background: styles.$green-600;
-      border: 10px solid styles.$yellow;
+      border: styles.$spacing-small solid styles.$yellow;
       grid-row: 2/ 4;
       grid-column: 2/ 5;
       display: grid;
@@ -25,7 +25,7 @@
 
     &-tertiary {
       background: styles.$green-500;
-      border: 10px solid styles.$white;
+      border: styles.$spacing-small solid styles.$white;
       grid-row: 3/ 4;
       grid-column: 2/ 5;
       display: grid;
@@ -35,7 +35,7 @@
 
     &-quaternary {
       background: styles.$green-700;
-      border: 10px solid styles.$blue;
+      border: styles.$spacing-small solid styles.$blue;
       grid-row: 4/ 4;
       grid-column: 2/ 5;
       display: grid;

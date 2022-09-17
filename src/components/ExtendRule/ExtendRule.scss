@@ -1,4 +1,10 @@
-@use '../../styles';
+@use "../../styles";
+
+%default-status-style {
+  color: styles.$brand-success;
+  padding-block: styles.$spacing-base;
+  font-size: styles.$spacing-medium;
+}
 
 .extend-rule {
   &__container {
@@ -16,17 +22,15 @@
     }
 
     &--success {
-      color: styles.$brand-success;
-      padding-block: styles.$spacing-base;
-      font-size: styles.$spacing-medium;
+      @extend %default-status-style;
     }
 
     &--error {
-      @extend .extend-rule__container--success;
+      @extend %default-status-style;
       color: styles.$brand-danger;
     }
 
-    @include styles.respond-to(small){
+    @include styles.respond-to(small) {
       &-header {
         &--title {
           padding-block: styles.$spacing-big;

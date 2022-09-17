@@ -1,24 +1,26 @@
+@use "../../styles";
+
 .has-selector {
   &__title {
-    font-size: 1.5rem;
+    font-size: styles.$spacing-medium;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: styles.$spacing-base;
   }
 
   &__subtitle {
-    font-size: 1.2rem;
+    font-size: styles.$spacing-base;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: styles.$spacing-base;
   }
 
   &__button {
-    font-size: 1.2rem;
+    font-size: styles.$spacing-base;
     font-weight: bold;
-    margin-bottom: 1rem;
-    color: green;
+    margin-bottom: styles.$spacing-base;
+    color: styles.$green-600;
   }
 }
 
 section:has(div) {
-  color: red;
+  color: styles.$red;
 }
