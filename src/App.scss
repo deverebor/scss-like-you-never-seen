@@ -1,0 +1,23 @@
+@forward "./styles/abstracts/";
+@forward "./styles/base/";
+@forward "./styles/themes/";
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+}
+
+body {
+  overflow-anchor: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: inherit;
+}
+
+.app {
+  min-height: 100vh;
+}
