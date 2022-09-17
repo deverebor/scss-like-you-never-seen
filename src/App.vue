@@ -41,7 +41,6 @@ export default defineComponent({
   },
 });
 </script>
-, AccentColor
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
