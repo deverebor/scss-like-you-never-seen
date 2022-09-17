@@ -1,14 +1,23 @@
 /// Variables, spacings, etc.
 
+$spacing-xsmall: 4rem;
 $spacing-small: 8px;
 $spacing-base: 16px;
 $spacing-medium: 24px;
 $spacing-big: 32px;
+$spacing-xbig: 48px;
+$spacing-xxbig: 64px;
 
 $width-small: 200px;
 
 $breakpoint: (
-  'small':  ( min-width:  767px ),
-  'medium': ( min-width:  992px ),
-  'large':  ( min-width: 1200px )
+  "small": (
+    min-width: 767px,
+  ),
+  "medium": (
+    min-width: 992px,
+  ),
+  "large": (
+    min-width: 1200px,
+  ),
 ) !default;
