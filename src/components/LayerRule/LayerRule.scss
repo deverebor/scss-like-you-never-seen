@@ -8,7 +8,7 @@
       inline-size: min(100% - 3rem, 60rem);
       margin-inline: auto;
 
-      &::where(:not(:first-child)) {
+      &:where(:not(:first-child)) {
         margin-bottom: var(--size-4);
       }
 
@@ -41,6 +41,10 @@
     padding-block: styles.$spacing-big;
     margin-block-end: styles.$spacing-small;
   }
+  
+  a {
+    cursor: pointer;
+  }
 }
 
 @layer components {
@@ -48,7 +52,7 @@
     &__container {
       &-button {
         display: inline-block;
-        pointer: cursor;
+        cursor: pointer;
         text-decoration: none;
         border-radius: styles.$spacing-base;
 
