@@ -38,3 +38,7 @@ ser uma cor válida, como `red`, `#f00`, `rgb(255, 0, 0)`,
 ```
 
 > Compatibilidade: Chrome(✅Suportado), Firefox(✅Suportado), Chromium(✅Suportado) & Safari(✅Suportado)
+
+---
+
+[Ir para o próximo conteúdo](../ContainerQueries/README.md)
