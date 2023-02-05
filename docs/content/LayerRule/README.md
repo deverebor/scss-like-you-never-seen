@@ -36,3 +36,7 @@ A ordem de declaração de camadas é importante, pois a camada mais acima será
 A propriedade layer pode ser útil para resolver problemas de prioridade não sendo mais necessário usar o atributo important.
 
 > Compatibilidade: Chrome(✅Suportado), Firefox(✅Suportado), Chromium(✅Suportado) & Safari(✅Suportado)
+
+---
+
+[Ir para o próximo conteúdo](../NestingRule/README.md)

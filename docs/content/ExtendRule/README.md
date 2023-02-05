@@ -78,3 +78,7 @@ Apesar do `@extend` ser mais simples, ele é tão poderoso quanto `@mixin`. Mas 
 Quando for necessário criar algum tipo de automatização utilize o `@mixin`, caso contrario utilize o `@extend`, ou até mesmo os dois juntos.
 
 > Compatibilidade: Chrome(✅Suportado), Firefox(✅Suportado), Chromium(✅Suportado) & Safari(✅Suportado)
+
+---
+
+[Ir para o próximo conteúdo](../HasSelector/README.md)

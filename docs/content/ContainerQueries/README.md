@@ -28,3 +28,7 @@ EX:
 ```
 
 > Compatibilidade: Chrome(🚧Beta), Firefox(🚧Beta), Chromium(🚧Beta) & Safari(✅Suportado)
+
+---
+
+[Ir para o próximo conteúdo](../ExtendRule/README.md)
