@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-beta.60" />
+    <meta name="theme" content="VuePress Theme Hope" />
+    <link rel="icon" href="/favicon.png"><meta name="google-site-verification" content="bmr3QFy052qbYVYRSuLrZrIpJPgIoLv2kIOXfdkwtkk"><title>SCSS como você nunca viu</title><meta name="description" content="Aprenda a usar o SCSS de uma forma diferente!">
+    <style>
+      :root {
+        --bg-color: #fff;
+      }
+
+      html[data-theme="dark"] {
+        --bg-color: #1d1e1f;
+      }
+
+      html,
+      body {
+        background: var(--bg-color);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.querySelector("html").setAttribute("data-theme", "dark");
+      }
+    </script>
+    <link rel="preload" href="/docs/assets/style-07842585.css" as="style"><link rel="stylesheet" href="/docs/assets/style-07842585.css">
+    <link rel="modulepreload" href="/docs/assets/app-cdc2ab11.js"><link rel="modulepreload" href="/docs/assets/framework-ba4bf44d.js"><link rel="modulepreload" href="/docs/assets/404.html-5a534959.js"><link rel="modulepreload" href="/docs/assets/404.html-5e4176a5.js"><link rel="prefetch" href="/docs/assets/index.html-0a337176.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-edbe9295.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-03406b93.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-36791a14.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-b0ac922a.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-476e5eea.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-80f10200.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-a56d9ce0.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-9e51c94f.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-8dcfc673.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-abc961a1.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-b088d00a.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-a698338d.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-998a5dfe.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-c44e70f2.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-cc3dfe20.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-d7167d5c.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-ba608eee.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-5af2e91e.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-6e3ec84f.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-d437487d.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-e48a7073.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-defe09a7.js" as="script"><link rel="prefetch" href="/docs/assets/index.html-e6277640.js" as="script"><link rel="prefetch" href="/docs/assets/photoswipe.esm-04fddac6.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><!--[--><!--[--><span tabindex="-1"></span><a href="#main-content" class="skip-link sr-only">Pular para o conteúdo</a><!--]--><!--[--><div class="theme-container no-sidebar has-toc"><!--[--><header class="navbar" id="navbar"><div class="navbar-start"><button class="toggle-sidebar-button" title="Toggle Sidebar"><span class="icon"></span></button><!--[--><!----><!--]--><a href="/docs/" class="brand"><!----><!----><span class="site-name">SCSS como você nunca viu</span></a><!--[--><!----><!--]--></div><div class="navbar-center"><!--[--><!----><!--]--><nav class="nav-links"><div class="nav-item hide-in-mobile"><a href="/docs/" class="nav-link" aria-label="Home"><span class="font-icon icon fa-fw fa-sm fas fa-home" style=""></span>Home<!----></a></div><div class="nav-item hide-in-mobile"><a href="/docs/started/" class="nav-link" aria-label="Começando"><span class="font-icon icon fa-fw fa-sm fas fa-code" style=""></span>Começando<!----></a></div><div class="nav-item hide-in-mobile"><a href="/docs/content/" class="nav-link" aria-label="Documentação"><span class="font-icon icon fa-fw fa-sm fas fa-book" style=""></span>Documentação<!----></a></div></nav><!--[--><!----><!--]--></div><div class="navbar-end"><!--[--><!----><!--]--><!----><!----><!----><!----><!--[--><!----><!--]--><button class="toggle-navbar-button" aria-label="Toggle Navbar" aria-expanded="false" aria-controls="nav-screen"><span class="button-container"><span class="button-top"></span><span class="button-middle"></span><span class="button-bottom"></span></span></button></div></header><!----><!--]--><!----><div class="toggle-sidebar-wrapper"><span class="arrow start"></span></div><aside class="sidebar" id="sidebar"><!--[--><!----><!--]--><ul class="sidebar-links"><li><!--[--><a href="/docs/" class="nav-link sidebar-link sidebar-page" aria-label="Home"><!---->Home<!----></a><ul class="sidebar-sub-headers"></ul><!--]--></li><li><section class="sidebar-group"><button class="sidebar-heading clickable"><!----><span class="title">Iniciando</span><span class="arrow end"></span></button><!----></section></li><li><section class="sidebar-group"><button class="sidebar-heading clickable"><!----><span class="title">Sumário</span><span class="arrow end"></span></button><!----></section></li></ul><!--[--><!----><!--]--></aside><!--[--><main class="page not-found" id="main-content"><div class="not-found-hint"><p class="error-code">404</p><h1 class="error-title">Não Encontrado</h1><p class="error-hint">Como chegou até aqui?</p></div><div class="actions"><button class="action-button">Voltar</button><button class="action-button">Leve-me para casa</button></div></main><!--]--><!----></div><!--]--><!--]--><!----><!--]--></div>
+    <script type="module" src="/docs/assets/app-cdc2ab11.js" defer></script>
+  </body>
+</html>
