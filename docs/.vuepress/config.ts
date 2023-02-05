@@ -2,7 +2,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme";
 
 export default defineUserConfig({
-  base: "/docs/",
+  base: "/scss-like-you-never-seen/",
   lang: "pt-BR",
   title: "SCSS como você nunca viu",
   description: "Aprenda a usar o SCSS de uma forma diferente!",
