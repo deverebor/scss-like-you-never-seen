@@ -9,6 +9,11 @@
         alt="tree"
       />
     </div>
+
+    <p class="nesting-rule__paragraph">Olá <stong>Mil reiz</stong> rsrs</p>
+    <p class="nesting-rule__paragraph"><strong>Joaninha Templaria</strong> rsrs</p>
+    <p class="nesting-rule__paragraph">Olá <strong>Calt biruta</strong> rsrs</p>
+    <p class="nesting-rule__paragraph"><strong> Erebor maluco</strong> rsrs</p>
   </div>
 </template>
 
