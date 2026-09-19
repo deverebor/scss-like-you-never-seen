@@ -22,4 +22,19 @@
   &-icon {
     color: styles.$brand-secondary-dark;
   }
+
+  &__paragraph {
+    color: styles.$brand-secondary-dark;
+    font-size: styles.$font-size-base;
+    font-weight: styles.$font-weight-bold;
+    margin: styles.$spacing-base;
+
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+  }
 }
